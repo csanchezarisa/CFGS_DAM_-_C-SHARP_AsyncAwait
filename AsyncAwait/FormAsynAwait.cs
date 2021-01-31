@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace AsyncAwait
 {
-    public partial class Form1 : Form
+    public partial class FormAsynAwait : Form
     {
-        public Form1()
+        public FormAsynAwait()
         {
             InitializeComponent();
+        }
+
+        private void Form_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

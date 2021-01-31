@@ -1,7 +1,7 @@
 ﻿
 namespace AsyncAwait
 {
-    partial class Form1
+    partial class FormAsynAwait
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -137,8 +137,9 @@ namespace AsyncAwait
             this.Controls.Add(this.listBoxTPL);
             this.Controls.Add(this.ListBoxSequential);
             this.Controls.Add(this.btnSequential);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Async / Await";
+            this.Text = "Async / Await";
+            this.Load += new System.EventHandler(this.Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
