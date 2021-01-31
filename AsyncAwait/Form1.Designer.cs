@@ -29,13 +29,133 @@ namespace AsyncAwait
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnSequential = new System.Windows.Forms.Button();
+            this.ListBoxSequential = new System.Windows.Forms.ListBox();
+            this.listBoxTPL = new System.Windows.Forms.ListBox();
+            this.btnTPL = new System.Windows.Forms.Button();
+            this.progressBarSequential = new System.Windows.Forms.ProgressBar();
+            this.progressBarTPL = new System.Windows.Forms.ProgressBar();
+            this.txtSequential = new System.Windows.Forms.TextBox();
+            this.txtTPL = new System.Windows.Forms.TextBox();
+            this.btnTime = new System.Windows.Forms.Button();
+            this.txtTime = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // btnSequential
+            // 
+            this.btnSequential.Location = new System.Drawing.Point(12, 12);
+            this.btnSequential.Name = "btnSequential";
+            this.btnSequential.Size = new System.Drawing.Size(75, 23);
+            this.btnSequential.TabIndex = 0;
+            this.btnSequential.Text = "Sequential";
+            this.btnSequential.UseVisualStyleBackColor = true;
+            // 
+            // ListBoxSequential
+            // 
+            this.ListBoxSequential.FormattingEnabled = true;
+            this.ListBoxSequential.Location = new System.Drawing.Point(93, 12);
+            this.ListBoxSequential.Name = "ListBoxSequential";
+            this.ListBoxSequential.Size = new System.Drawing.Size(229, 173);
+            this.ListBoxSequential.TabIndex = 1;
+            // 
+            // listBoxTPL
+            // 
+            this.listBoxTPL.FormattingEnabled = true;
+            this.listBoxTPL.Location = new System.Drawing.Point(328, 12);
+            this.listBoxTPL.Name = "listBoxTPL";
+            this.listBoxTPL.Size = new System.Drawing.Size(229, 173);
+            this.listBoxTPL.TabIndex = 2;
+            // 
+            // btnTPL
+            // 
+            this.btnTPL.Location = new System.Drawing.Point(563, 12);
+            this.btnTPL.Name = "btnTPL";
+            this.btnTPL.Size = new System.Drawing.Size(75, 23);
+            this.btnTPL.TabIndex = 3;
+            this.btnTPL.Text = "TPL";
+            this.btnTPL.UseVisualStyleBackColor = true;
+            // 
+            // progressBarSequential
+            // 
+            this.progressBarSequential.Location = new System.Drawing.Point(93, 191);
+            this.progressBarSequential.Name = "progressBarSequential";
+            this.progressBarSequential.Size = new System.Drawing.Size(229, 23);
+            this.progressBarSequential.TabIndex = 4;
+            // 
+            // progressBarTPL
+            // 
+            this.progressBarTPL.Location = new System.Drawing.Point(328, 191);
+            this.progressBarTPL.Name = "progressBarTPL";
+            this.progressBarTPL.Size = new System.Drawing.Size(229, 23);
+            this.progressBarTPL.TabIndex = 5;
+            // 
+            // txtSequential
+            // 
+            this.txtSequential.Location = new System.Drawing.Point(93, 221);
+            this.txtSequential.Name = "txtSequential";
+            this.txtSequential.ReadOnly = true;
+            this.txtSequential.Size = new System.Drawing.Size(229, 20);
+            this.txtSequential.TabIndex = 6;
+            // 
+            // txtTPL
+            // 
+            this.txtTPL.Location = new System.Drawing.Point(328, 221);
+            this.txtTPL.Name = "txtTPL";
+            this.txtTPL.ReadOnly = true;
+            this.txtTPL.Size = new System.Drawing.Size(229, 20);
+            this.txtTPL.TabIndex = 7;
+            // 
+            // btnTime
+            // 
+            this.btnTime.Location = new System.Drawing.Point(93, 292);
+            this.btnTime.Name = "btnTime";
+            this.btnTime.Size = new System.Drawing.Size(75, 23);
+            this.btnTime.TabIndex = 8;
+            this.btnTime.Text = "Time?";
+            this.btnTime.UseVisualStyleBackColor = true;
+            // 
+            // txtTime
+            // 
+            this.txtTime.Location = new System.Drawing.Point(174, 294);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.ReadOnly = true;
+            this.txtTime.Size = new System.Drawing.Size(383, 20);
+            this.txtTime.TabIndex = 9;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtTime);
+            this.Controls.Add(this.btnTime);
+            this.Controls.Add(this.txtTPL);
+            this.Controls.Add(this.txtSequential);
+            this.Controls.Add(this.progressBarTPL);
+            this.Controls.Add(this.progressBarSequential);
+            this.Controls.Add(this.btnTPL);
+            this.Controls.Add(this.listBoxTPL);
+            this.Controls.Add(this.ListBoxSequential);
+            this.Controls.Add(this.btnSequential);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnSequential;
+        private System.Windows.Forms.ListBox ListBoxSequential;
+        private System.Windows.Forms.ListBox listBoxTPL;
+        private System.Windows.Forms.Button btnTPL;
+        private System.Windows.Forms.ProgressBar progressBarSequential;
+        private System.Windows.Forms.ProgressBar progressBarTPL;
+        private System.Windows.Forms.TextBox txtSequential;
+        private System.Windows.Forms.TextBox txtTPL;
+        private System.Windows.Forms.Button btnTime;
+        private System.Windows.Forms.TextBox txtTime;
     }
 }
 
