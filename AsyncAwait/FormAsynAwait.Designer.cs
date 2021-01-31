@@ -49,6 +49,7 @@ namespace AsyncAwait
             this.btnSequential.TabIndex = 0;
             this.btnSequential.Text = "Sequential";
             this.btnSequential.UseVisualStyleBackColor = true;
+            this.btnSequential.Click += new System.EventHandler(this.btnSequential_Click);
             // 
             // ListBoxSequential
             // 
@@ -74,6 +75,7 @@ namespace AsyncAwait
             this.btnTPL.TabIndex = 3;
             this.btnTPL.Text = "TPL";
             this.btnTPL.UseVisualStyleBackColor = true;
+            this.btnTPL.Click += new System.EventHandler(this.btnTPL_Click);
             // 
             // progressBarSequential
             // 
@@ -113,6 +115,7 @@ namespace AsyncAwait
             this.btnTime.TabIndex = 8;
             this.btnTime.Text = "Time?";
             this.btnTime.UseVisualStyleBackColor = true;
+            this.btnTime.Click += new System.EventHandler(this.btnTime_Click);
             // 
             // txtTime
             // 
@@ -122,7 +125,7 @@ namespace AsyncAwait
             this.txtTime.Size = new System.Drawing.Size(383, 20);
             this.txtTime.TabIndex = 9;
             // 
-            // Form1
+            // FormAsynAwait
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -137,7 +140,7 @@ namespace AsyncAwait
             this.Controls.Add(this.listBoxTPL);
             this.Controls.Add(this.ListBoxSequential);
             this.Controls.Add(this.btnSequential);
-            this.Name = "Async / Await";
+            this.Name = "FormAsynAwait";
             this.Text = "Async / Await";
             this.Load += new System.EventHandler(this.Form_Load);
             this.ResumeLayout(false);
