@@ -44,7 +44,7 @@ namespace AsyncAwait
                 {
                     ListBoxSequential.Items.Add(file);
                 }
-                Thread.Sleep(10);
+                Thread.Sleep(100);
             }
 
             clock.Stop();
@@ -62,7 +62,7 @@ namespace AsyncAwait
             Stopwatch clock = new Stopwatch();
             clock.Restart();
 
-            Task<List<string>> searchTask = Task.Factory.StartNew<List<string>>(() =>
+            var searchTask = Task.Factory.StartNew<List<string>>(() =>
             {
                 List<string> elements = new List<string>();
 
@@ -72,11 +72,13 @@ namespace AsyncAwait
                     {
                         elements.Add(file);
                     });
-                    Thread.Sleep(10);
+                    Thread.Sleep(100);
                 }
 
                 return elements;
             });
+
+            await searchTask;
 
             listBoxTPL.DataSource = searchTask.Result;
 
