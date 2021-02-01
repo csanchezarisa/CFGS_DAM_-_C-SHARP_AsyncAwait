@@ -89,7 +89,7 @@ namespace AsyncAwait
         /** Click en el botón para saber la hora */
         private void btnTime_Click(object sender, EventArgs e)
         {
-
+            txtTime.Text = "Són les " + DateTime.Now.ToString("h:mm:ss tt");
         }
     }
 }
